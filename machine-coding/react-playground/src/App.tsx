@@ -5,6 +5,7 @@ import { problems } from "./problems/registry";
 const problemModules: Record<string, React.LazyExoticComponent<() => React.ReactElement>> = {
   "capture-visible-items": lazy(() => import("./problems/capture-visible-items")),
   "multi-step-form": lazy(() => import("./problems/multi-step-form")),
+  "modal": lazy(() => import("./problems/modal")),
 };
 
 const difficultyColor: Record<string, string> = {

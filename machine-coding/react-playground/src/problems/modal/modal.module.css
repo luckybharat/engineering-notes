@@ -1,0 +1,39 @@
+.backdrop {
+    display: none;
+    visibility: hidden;
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #00000040;
+}
+.backdrop.open {
+    display: block;
+    visibility: visible;
+}
+
+.modalShell {
+    position: relative;
+}
+
+.modal {
+    padding: 24px;
+    border-radius: 24px;
+    background-color: #FFFFFF;
+    display: none;
+    visibility: hidden;
+}
+
+.modal.open {
+    display: block;
+    visibility: visible;
+}
+
+.modalWrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

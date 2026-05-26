@@ -23,4 +23,11 @@ export const problems: Problem[] = [
     difficulty: "Medium",
     tags: ["Forms", "State", "UX"],
   },
+  {
+    id: 'modal',
+    title: 'Modal',
+    description: 'A modal component with basic functionalites',
+    difficulty: "Easy",
+    tags: ['UI', 'UX', 'Alerts', 'Modal']
+  }
 ];
