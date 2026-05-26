@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #111827;
+  background: #f9fafb;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.page-title {
+  margin-bottom: 0.25rem;
+}
+
+.page-description {
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.problems-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.problems-grid.a {
+  text-decoration: "none";
+  color: "inherit";
+}
+
+.problem {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1.25rem;
+  cursor: pointer;
+  box-shadow: none;
+  transition: box-shadow 0.5ms;
+}
+.problem:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.problem .detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: .5rem;
+}
+.problem .detail .title {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+.problem .detail .level {
+  font-size: .7rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 99;
+  white-space: nowrap;
+}
+.problem .detail .description {
+  margin: 0 0 .75rem;
+  color: #e5e7eb;
+  font-size: 0.875rem;
+}
+
+.problem .detail .tags {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  flex-wrap: wrap;
+}
+.problem .detail .tag {
+  font-size: .7rem;
+  background: #f3f4f6;
+  padding: 2px 8px;
+  border-radius: 99;
+}
