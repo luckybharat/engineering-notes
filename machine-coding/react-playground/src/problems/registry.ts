@@ -29,5 +29,12 @@ export const problems: Problem[] = [
     description: 'A modal component with basic functionalites',
     difficulty: "Easy",
     tags: ['UI', 'UX', 'Alerts', 'Modal']
+  },
+  {
+    id: 'auto-complete-search',
+    title: 'Auto complete search',
+    description: 'A simple autocomplete search with debouncing',
+    difficulty: 'Medium',
+    tags: ['Search', 'Debouncing', 'UI']
   }
 ];

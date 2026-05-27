@@ -1,0 +1,38 @@
+.stepsContainer {
+    position: relative;
+}
+
+.progress {
+    position: absolute;
+    height: 2px;
+    background-color: gray;
+    width: 0;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transition: all 0.25s ease;
+}
+
+.stepList {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.step {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25 ease;
+    cursor: pointer;
+}
+
+.step.active {
+    background-color: skyblue;
+}

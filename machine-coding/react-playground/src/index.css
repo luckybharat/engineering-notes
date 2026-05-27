@@ -48,7 +48,7 @@ a:hover {
   gap: 1rem;
 }
 
-.problems-grid.a {
+.problems-grid a {
   text-decoration: "none";
   color: "inherit";
 }

@@ -6,6 +6,7 @@ const problemModules: Record<string, React.LazyExoticComponent<() => React.React
   "capture-visible-items": lazy(() => import("./problems/capture-visible-items")),
   "multi-step-form": lazy(() => import("./problems/multi-step-form")),
   "modal": lazy(() => import("./problems/modal")),
+  "auto-complete-search": lazy(() => import("./problems/autocomplete-search")),
 };
 
 const difficultyColor: Record<string, string> = {
