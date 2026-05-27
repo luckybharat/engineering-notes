@@ -44,4 +44,11 @@ export const problems: Problem[] = [
     difficulty: "Medium",
     tags: [],
   },
+  {
+    id: "tabs",
+    title: "Tabs",
+    description: "Simple tabs component using Compund Component Pattern",
+    difficulty: "Medium",
+    tags: [],
+  },
 ];
