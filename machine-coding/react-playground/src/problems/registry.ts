@@ -51,4 +51,11 @@ export const problems: Problem[] = [
     difficulty: "Medium",
     tags: [],
   },
+  {
+    id: "toast",
+    title: "Toast",
+    description: "Basic toast notification component",
+    difficulty: "Medium",
+    tags: [],
+  },
 ];
