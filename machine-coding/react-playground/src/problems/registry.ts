@@ -24,17 +24,24 @@ export const problems: Problem[] = [
     tags: ["Forms", "State", "UX"],
   },
   {
-    id: 'modal',
-    title: 'Modal',
-    description: 'A modal component with basic functionalites',
+    id: "modal",
+    title: "Modal",
+    description: "A modal component with basic functionalites",
     difficulty: "Easy",
-    tags: ['UI', 'UX', 'Alerts', 'Modal']
+    tags: ["UI", "UX", "Alerts", "Modal"],
   },
   {
-    id: 'auto-complete-search',
-    title: 'Auto complete search',
-    description: 'A simple autocomplete search with debouncing',
-    difficulty: 'Medium',
-    tags: ['Search', 'Debouncing', 'UI']
-  }
+    id: "auto-complete-search",
+    title: "Auto complete search",
+    description: "A simple autocomplete search with debouncing",
+    difficulty: "Medium",
+    tags: ["Search", "Debouncing", "UI"],
+  },
+  {
+    id: "infinite-scroll",
+    title: "Infinite Scroll",
+    description: "Simple infinite scroll component for a list",
+    difficulty: "Medium",
+    tags: [],
+  },
 ];
