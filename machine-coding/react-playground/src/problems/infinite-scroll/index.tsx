@@ -1,9 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-
-const randomResponseTimer = (max = 10, min = 3) => {
-    const timer = Math.floor(Math.random() * (max - min + 1)) + min;
-    return timer;
-}
+import { randomResponseTimer } from "../../utils";
 
 const generateMockRows = (offset = 0, limit = 20, max = 500): Promise<number[]> => {
     return new Promise((resolve) => {
