@@ -1,7 +1,8 @@
-import { createContext, useContext, useState, type ReactNode } from "react";
+import { createContext, useContext, useState, type CSSProperties, type ReactNode } from "react";
 const MAX_TOAST_STACK_LIMIT = 3;
 
 type ToastOptions = 'success' | 'error' | 'warning' | 'info';
+
 
 type CreateToastParams = Omit<ToastParams, 'id'>;
 
@@ -17,6 +18,16 @@ type ToastContextType = {
     toasts: ToastParams[];
     createToast: (params: CreateToastParams) => void;
     removeToast: (id: string) => void;
+}
+type ToastStyles = {
+    [K in ToastOptions]: CSSProperties
+}
+
+const toastStyles: ToastStyles = {
+    'success': { background: 'green', color: '#FFFFFF' },
+    'warning': { background: 'orange', color: '#FFFFFF' },
+    'info': { background: 'skyblue', color: '#FFFFFF' },
+    'error': { background: 'red', color: '#FFFFFF' },
 }
 
 const ToastContext = createContext<ToastContextType | null>(null);
@@ -58,7 +69,7 @@ export const ToastProvider = ({ children }: { children: ReactNode }) => {
 
 const Toast = ({ toast }: { toast: ToastParams }) => {
     const { removeToast } = useToast();
-    return <div style={{ border: '1px solid #EFEFEF', borderRadius: 8, display: 'flex', justifyContent: 'space-between', width: 400, padding: 8, }}>
+    return <div style={{ border: '1px solid #EFEFEF', borderRadius: 8, display: 'flex', justifyContent: 'space-between', width: 400, padding: 8, ...toastStyles[toast.type] }}>
         <div>
             <div>{toast.title}</div>
             <div>{toast.message}</div>
