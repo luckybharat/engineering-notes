@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, type CSSProperties, type ReactNode } from "react";
+import { createContext, useContext, useState, type CSSProperties, type ReactNode, type SubmitEvent } from "react";
 const MAX_TOAST_STACK_LIMIT = 3;
 
 type ToastOptions = 'success' | 'error' | 'warning' | 'info';
@@ -97,7 +97,8 @@ export default function ToastDemo() {
         timeout: 3000,
     })
 
-    const onAddToast = () => {
+    const onAddToast = (event: SubmitEvent<HTMLFormElement>) => {
+        event.preventDefault();
         createToast(config)
     };
 
@@ -106,16 +107,16 @@ export default function ToastDemo() {
         setConfig((config) => ({ ...config, [name]: value }));
     }
 
-    return <div>
-        <input name="title" type="text" placeholder="Add title" value={config.title} onChange={handleChange} />
-        <input name="message" type="text" placeholder="Add title" value={config.message} onChange={handleChange} />
-        <select name="type" value={config.type} onChange={handleChange}>
+    return <form onSubmit={onAddToast}>
+        <input required name="title" type="text" placeholder="Add title" value={config.title} onChange={handleChange} />
+        <input required name="message" type="text" placeholder="Add title" value={config.message} onChange={handleChange} />
+        <select required name="type" value={config.type} onChange={handleChange}>
             <option value="success">Success</option>
             <option value="warning">Warning</option>
             <option value="info">Info</option>
             <option value="error">Error</option>
         </select>
-        <input name="timeout" type="number" value={config.timeout} min={3000} onChange={handleChange} />
-        <button onClick={onAddToast}>Add toast</button>
-    </div>
+        <input required name="timeout" type="number" value={config.timeout} min={3000} onChange={handleChange} />
+        <button type="submit">Add toast</button>
+    </form>
 }
