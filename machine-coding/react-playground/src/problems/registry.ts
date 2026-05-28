@@ -92,5 +92,12 @@ export const problems: Problem[] = [
     description: 'Draggable Todos order + multi-column',
     difficulty: 'Hard',
     tags: [],
+  },
+  {
+    id: 'virtualized-list',
+    title: 'Virtualized List',
+    description: 'Virtualized list',
+    difficulty: 'Hard',
+    tags: [],
   }
 ];

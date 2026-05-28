@@ -15,6 +15,7 @@ const problemModules: Record<string, React.LazyExoticComponent<() => React.React
   "carousel": lazy(() => import('./problems/carousel')),
   "accordion": lazy(() => import('./problems/accordion')),
   "draggable-todos": lazy(() => import('./problems/draggable-todos')),
+  "virtualized-list": lazy(() => import('./problems/virtualized-list')),
 };
 
 const difficultyColor: Record<string, string> = {
