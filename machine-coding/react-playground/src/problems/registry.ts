@@ -58,4 +58,11 @@ export const problems: Problem[] = [
     difficulty: "Medium",
     tags: [],
   },
+  {
+    id: "pagination",
+    title: "pagination",
+    description: "Pagination component",
+    difficulty: "Medium",
+    tags: [],
+  },
 ];
