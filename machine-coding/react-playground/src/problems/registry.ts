@@ -85,5 +85,12 @@ export const problems: Problem[] = [
     description: 'Accordion component',
     difficulty: 'Easy',
     tags: [],
+  },
+  {
+    id: 'draggable-todos',
+    title: 'Draggable Todos',
+    description: 'Draggable Todos order + multi-column',
+    difficulty: 'Hard',
+    tags: [],
   }
 ];

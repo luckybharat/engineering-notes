@@ -14,6 +14,7 @@ const problemModules: Record<string, React.LazyExoticComponent<() => React.React
   "scroll-indicator": lazy(() => import('./problems/scroll-indicator')),
   "carousel": lazy(() => import('./problems/carousel')),
   "accordion": lazy(() => import('./problems/accordion')),
+  "draggable-todos": lazy(() => import('./problems/draggable-todos')),
 };
 
 const difficultyColor: Record<string, string> = {
