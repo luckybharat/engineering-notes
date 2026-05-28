@@ -78,5 +78,12 @@ export const problems: Problem[] = [
     description: 'Carousel component',
     difficulty: 'Easy',
     tags: [],
+  },
+  {
+    id: 'accordion',
+    title: 'Accordion',
+    description: 'Accordion component',
+    difficulty: 'Easy',
+    tags: [],
   }
 ];
