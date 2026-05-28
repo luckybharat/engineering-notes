@@ -100,3 +100,30 @@ a:hover {
   padding: 2px 8px;
   border-radius: 99;
 }
+
+.carousel-item {
+  display: none;
+  visibility: hidden;
+}
+
+.carousel-item.active {
+  display: block;
+  visibility: visible;
+}
+
+.carousel-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px;
+}
+.carousel-nav .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #EFEFEF;
+}
+
+.carousel-nav .dot.active {
+  background-color: skyblue;
+}

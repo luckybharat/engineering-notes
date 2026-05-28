@@ -12,6 +12,7 @@ const problemModules: Record<string, React.LazyExoticComponent<() => React.React
   "toast": lazy(() => import('./problems/toast')),
   "pagination": lazy(() => import('./problems/pagination')),
   "scroll-indicator": lazy(() => import('./problems/scroll-indicator')),
+  "carousel": lazy(() => import('./problems/carousel')),
 };
 
 const difficultyColor: Record<string, string> = {
