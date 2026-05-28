@@ -65,4 +65,11 @@ export const problems: Problem[] = [
     difficulty: "Medium",
     tags: [],
   },
+  {
+    id: "scroll-indicator",
+    title: "Scroll Indicator",
+    description: "Scroll Indicator component",
+    difficulty: "Easy",
+    tags: [],
+  },
 ];
